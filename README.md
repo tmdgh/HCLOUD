@@ -1,3 +1,4 @@
+난 이승호다
 # Training a Create ML Model to Classify Fish
 
 Train a fish classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.
