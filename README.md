@@ -195,3 +195,5 @@ After processing your buffers, be sure to release them to prevent them from queu
 ```
 self.currentlyAnalyzedPixelBuffer = nil
 ```
+All the documents here is from Apple company.
+https://developer.apple.com/
