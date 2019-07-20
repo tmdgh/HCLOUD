@@ -1,10 +1,10 @@
-# Training a Create ML Model to Classify Flowers
+# Training a Create ML Model to Classify Fish
 
-Train a flower classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.
+Train a fish classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.
 
 ## Overview
 
-To classify images in real time, you need a classification model with the categories you’d like identified, and a way to capture images to feed to the classifier.
+To classify images in real time, we need a classification model with the categories you’d like identified, and a way to capture images to feed to the classifier.
 
 ![Block diagram showing how images used to train a Create ML model help classify images in a Vision app.](Documentation/VisionCreateML_2x.png)
 
