@@ -88,6 +88,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     func startCaptureSession() {
         session.startRunning()
+        
     }
     
     // Clean up capture setup.

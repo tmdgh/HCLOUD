@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oos-48-xe2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Vision View Controller-->
+        <!--SCAM-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="VisionViewController" customModule="FlowerShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="VisionViewController" customModule="Fish" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,6 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="SCAM" id="0A1-Zz-KXw"/>
                     <connections>
                         <outlet property="previewView" destination="8bC-Xf-vdC" id="KdU-3x-Jsv"/>
                         <segue destination="dbX-yB-FPi" kind="presentation" identifier="showProductSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="4mq-ou-f1b"/>
@@ -28,12 +29,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196" y="133"/>
+            <point key="canvasLocation" x="1135.2" y="132.68365817091455"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="0bt-xB-v8U">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="dbX-yB-FPi" customClass="ProductViewController" customModule="FlowerShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="dbX-yB-FPi" customClass="ProductViewController" customModule="Fish" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mdf-36-VIu"/>
                         <viewControllerLayoutGuide type="bottom" id="qu0-eO-443"/>
@@ -112,10 +113,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVQ-wS-j1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="0VO-Kb-ucn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="839.20000000000005" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1778.4000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jH3-mK-WSb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oos-48-xe2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uc7-MB-DhH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="NT0-xg-mnc"/>
+                        <segue destination="C2x-DV-AVk" kind="relationship" relationship="viewControllers" id="NHN-gR-Yre"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="odN-WB-WOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="132.68365817091455"/>
+        </scene>
+        <!--도감-->
+        <scene sceneID="FCP-T1-YgV">
+            <objects>
+                <viewController id="C2x-DV-AVk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yrF-CX-b0W"/>
+                        <viewControllerLayoutGuide type="bottom" id="upy-qI-uRj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NZT-Ba-hmW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="도감" id="3RU-dN-cNz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJM-wM-Xb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="878"/>
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="1530" height="1980"/>
+        <image name="background" width="180" height="180"/>
     </resources>
 </document>

@@ -2,7 +2,7 @@
 See LICENSE folder for this sample’s licensing information.
 
 Abstract:
-Implements a view controller introducing each flower product.
+Implements a view controller introducing each fish product.
 */
 
 import UIKit

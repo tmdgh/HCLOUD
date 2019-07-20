@@ -26,7 +26,7 @@ class VisionViewController: ViewController {
     private var currentlyAnalyzedPixelBuffer: CVPixelBuffer?
     
     // Queue for dispatching vision classification and barcode requests
-    private let visionQueue = DispatchQueue(label: "com.example.apple-samplecode.FlowerShop.serialVisionQueue")
+    private let visionQueue = DispatchQueue(label: "com.example.apple-samplecode.Fish.serialVisionQueue")
     var productViewOpen = false
     
     fileprivate func showProductInfo(_ identifier: String) {
@@ -60,7 +60,7 @@ class VisionViewController: ViewController {
         self.analysisRequests = ([barcodeDetection])
         
         // Setup a classification request.
-        guard let modelURL = Bundle.main.url(forResource: "FlowerShop", withExtension: "mlmodelc") else {
+        guard let modelURL = Bundle.main.url(forResource: "FishClassifier", withExtension: "mlmodelc") else {
             return NSError(domain: "VisionViewController", code: -1, userInfo: [NSLocalizedDescriptionKey: "The model file is missing."])
         }
         guard let objectRecognition = createClassificationRequest(modelURL: modelURL) else {
@@ -77,7 +77,7 @@ class VisionViewController: ViewController {
             let classificationRequest = VNCoreMLRequest(model: objectClassifier, completionHandler: { (request, error) in
                 if let results = request.results as? [VNClassificationObservation] {
                     print("\(results.first!.identifier) : \(results.first!.confidence)")
-                    if results.first!.confidence > 0.9 {
+                    if results.first!.confidence > 0.7 {
                         self.showProductInfo(results.first!.identifier)
                     }
                 }
